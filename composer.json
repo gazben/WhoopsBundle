@@ -1,6 +1,6 @@
 {
     "name": "mickaelandrieu/whoops-bundle",
-    "description": "Symfony 2 implementation of Whoops debugguer library",
+    "description": "Symfony 3 implementation of Whoops debugguer library",
     "type": "bundle",
     "license": "MIT",
     "keywords": ["utility", "debug", "whoops"],
@@ -10,12 +10,16 @@
             "name": "Mickaël Andrieu",
             "email": "mickael.andrieu@sensiolabs.com",
             "homepage": "http://mickael-andrieu.com"
+        },
+        {
+            "name": "Bence Gazder",
+            "email": "bencegazder@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/framework-bundle": "~2.3",
-        "filp/whoops": "1.0.10"
+        "symfony/framework-bundle": "~3.0",
+        "filp/whoops": "~2.1.2"
     },
     "autoload": {
         "psr-0": {"Am\\WhoopsBundle": ""}
