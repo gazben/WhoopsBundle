@@ -23,7 +23,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('resources_path')
                     ->cannotBeEmpty()
-                    ->defaultValue('%kernel.root_dir%/../web/bundles/amwhoops')
+                    ->defaultValue(__DIR__. '/../Resources/public')
                 ->end()
             ->end();
 

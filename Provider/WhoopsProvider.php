@@ -42,6 +42,8 @@ class WhoopsProvider
 
     private function getSessionStatus($statusCode)
     {
+        if($statusCode == 0)
+            $statusCode = 404;
         return $statusCode .' : ' . Response::$statusTexts[$statusCode];
     }
 

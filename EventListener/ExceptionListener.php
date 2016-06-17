@@ -22,7 +22,7 @@ class ExceptionListener
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
         $exception = $event->getException();
-        $whoops = $this->whoopsProvider->launch($event->getRequest(), $exception->getStatusCode());
+        $whoops = $this->whoopsProvider->launch($event->getRequest(), $exception->getCode());
         $whoopsResponse = $whoops->handleException($exception);
         $event->setResponse(new Response($whoopsResponse));
 
